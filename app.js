@@ -32,7 +32,7 @@ app.post('/login', (req, res) => {
     if (err) throw err;
 
     const passwordIsValid = /^(?=.*\d).{6,}$/.test(password);
-    if (passwordIsValid && (username == 'umashankarsaini11' || username == 'Lizel_rose8')) res.render('love');
+    if (username && passwordIsValid && (username.toLowerCase() == 'umashankarsaini11' || username.toLowerCase() == 'lizel_rose8')) res.render('love');
     else res.render('invalid');
   });
 });
