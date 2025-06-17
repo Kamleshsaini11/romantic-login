@@ -1,18 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Love Page</title>
-  <link rel="stylesheet" href="/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Surprise ❤️</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #ffe0e9, #ffc2d1);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+      color: #e91e63;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      font-size: 1.5rem;
+      max-width: 600px;
+    }
+
+    .emojis {
+      font-size: 2rem;
+      margin: 1em 0;
+      animation: float 3s infinite ease-in-out;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .heart {
+      font-size: 5rem;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+  </style>
 </head>
 <body>
-  <div class="love-page">
-    <h1>❤️ Love You Forever ❤️</h1>
-    <p>You light up my world like nobody else.</p>
-    <p>Every moment with you is a treasure.</p>
-    <p>You're the reason behind my smile. 💫</p>
-    <p>Forever yours, always and endlessly. 💌</p>
-    <div class="hearts">💖 💘 💕 💝 💗</div>
-  </div>
+  <div class="heart">❤️</div>
+  <h1>I love you! 💖</h1>
+  <div class="emojis">😍🥰😘💋💞💕💓💗💖</div>
+  <p>
+    You're my sunshine 🌞, my favorite person 🧸, my everything 🌍.<br>
+    I love you more than words can express. 💌<br><br>
+    Te amo 💘<br>
+    Je t’aime 🌹<br>
+    Ich liebe dich 🫶<br>
+    Ti amo 🌟<br>
+    사랑해 ❤️<br>
+    मैं तुमसे प्यार करता हूँ 💕<br>
+    Eu te amo 💑<br><br>
+    Forever yours 💍
+  </p>
+  <div class="emojis">🌈✨🌸🌷🌹🌺🌼</div>
 </body>
 </html>
