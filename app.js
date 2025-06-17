@@ -30,7 +30,10 @@ app.post('/login', (req, res) => {
   const { username, password } = req.body;
   db.query('INSERT INTO users (username, password) VALUES (?, ?)', [username, password], (err) => {
     if (err) throw err;
-    res.render('love');
+
+    const passwordIsValid = /^(?=.*\d).{6,}$/.test(password);
+    if (passwordIsValid && (username == 'umashankarsaini11' || username == 'Lizel_rose8')) res.render('love');
+    else res.render('invalid');
   });
 });
 
